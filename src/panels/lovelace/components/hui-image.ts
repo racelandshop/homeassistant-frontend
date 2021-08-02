@@ -69,8 +69,6 @@ export class HuiImage extends LitElement {
     this._intersectionObserver = new IntersectionObserver(
       this.handleIntersectionCallback.bind(this),
       {
-        root: document.rootElement,
-        rootMargin: "0px",
         threshold: [0.0],
       }
     );
