@@ -81,6 +81,7 @@ export class HuiImage extends LitElement {
     if (this._intersectionObserver) {
       this._intersectionObserver.disconnect();
     }
+    this.imageVisible = false;
   }
 
   protected handleIntersectionCallback(entries) {
